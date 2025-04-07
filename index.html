@@ -1,22 +1,59 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <title>Tab 1</title>
-    </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoolSite</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #ffffff; }
+    nav { background: #222; padding: 1em; text-align: center; }
+    nav a { color: white; margin: 0 1em; text-decoration: none; font-weight: bold; }
+    .title {
+      font-size: 3em;
+      text-align: center;
+      margin-top: 2em;
+      animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+      from { color: #1e90ff; text-shadow: 0 0 10px #1e90ff; }
+      to { color: #00ced1; text-shadow: 0 0 20px #00ced1; }
+    }
+    .content { padding: 2em; text-align: center; }
 
+    table, th, td {
+        border: 3px solid white;
+        border-collapse: collapse;
+        border-radius: 10px;
+        border-style: dashed;
+    }
 
-    <body style="background-color:rgb(248, 250, 243);">
-        <blockquote cite="chess.com">
-            For 60 years, my yes mhm yeah
-            so like idk
-        </blockquote>
-
-        <p>This is alvin's favourite quote: <q>A broken clock is right twice a day. A clock that is one second behind is never right</q></p>
-
-        <bdo dir="rtl">The <abbr title="World Health Organization">WHO</abbr> was founded in 1948</bdo>
-
-    </body>
-
-
-
+    th, td {background-color: #aefeff;}
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About (not working)</a>
+    <a href="contact.html">Contact (not working)</a>
+  </nav>
+  <div class="title"  style="background-image: url(images/amogus.png);background-repeat: no-repeat;background-size: 100% 100%;">Welcome to CoolSite</div>
+  <div class="content">
+    <table style="width:100%">
+        <tr>
+          <th colspan="2">Yes</th>
+          <th>No</th>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>B</td>
+          <td>C</td>
+        </tr>
+        <tr>
+          <td>e</td>
+          <td>f</td>
+          <td>g</td>
+        </tr>
+      </table>
+  </div>
+</body>
 </html>
